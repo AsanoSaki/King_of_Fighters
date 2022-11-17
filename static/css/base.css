@@ -1,0 +1,77 @@
+#kof {
+    width: 1280px;
+    height: 720px;
+
+    background-image: url('/static/images/background/1.gif');
+    background-size: 100% 100%;
+    background-position: top;
+
+    position: absolute;
+}
+
+#kof>.kof-head {
+    width: 100%;
+    height: 80px;
+
+    position: absolute;
+    top: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#kof>.kof-head>.kof-head-hp-0 {
+    height: 20px;
+    width: calc(50% - 80px);
+    border: #12B9B5 5px solid;
+    border-right: none;
+}
+
+#kof>.kof-head>.kof-head-timer {
+    height: 60px;
+    width: 80px;
+    background-color: #012545;
+    border: #12B9B5 5px solid;
+    text-align: center;
+    line-height: 60px;
+    font-size: 45px;
+    font-weight: 800;
+    color: white;
+    user-select: none;
+}
+
+#kof>.kof-head>.kof-head-hp-1 {
+    height: 20px;
+    width: calc(50% - 80px);
+    border: #12B9B5 5px solid;
+    border-left: none;
+}
+
+#kof>.kof-head>.kof-head-hp-0>.kof-head-hp-0-inner {
+    width: 100%;
+    height: 100%;
+    background-color: #E84D0A;
+    /* 让左边的血条靠右，血量从左边开始减少 */
+    float: right;
+}
+
+#kof>.kof-head>.kof-head-hp-1>.kof-head-hp-1-inner {
+    width: 100%;
+    height: 100%;
+    background-color: #E84D0A;
+}
+
+#kof>.kof-head>.kof-head-hp-0>.kof-head-hp-0-inner>.kof-head-hp-0-outer {
+    width: 100%;
+    height: 100%;
+    background-color: #FFE336;
+    /* 让左边的血条靠右，血量从左边开始减少 */
+    float: right;
+}
+
+#kof>.kof-head>.kof-head-hp-1>.kof-head-hp-1-inner>.kof-head-hp-1-outer {
+    width: 100%;
+    height: 100%;
+    background-color: #FFE336;
+}
